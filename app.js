@@ -33,16 +33,13 @@ function greetingRules() {
 
   if (hours < 12) {
     document.getElementById('greeting').innerHTML = goodMorning;
-  }
-  if (hours < 17) {
+  } else if (hours < 17) {
     document.getElementById('greeting').innerHTML = goodAfternoon;
-  }
-  if (hours < 21) {
+  } else if (hours < 21) {
     document.getElementById('greeting').innerHTML = goodEvening;
-  }
-  if (hours < 24) {
+  } else if (hours < 24) {
     document.getElementById('greeting').innerHTML = goodNight;
   }
 }
 
-setInterval(greetingRules, 1000);
+setInterval(greetingRules, 3000);
